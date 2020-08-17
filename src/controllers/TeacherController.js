@@ -12,8 +12,8 @@ module.exports = {
   async create(req, res) { 
     const { name, email, password, whatsapp, school, subject } = req.body;
 
-    const salt =bcrypt.genSaltSync(10)
-    const hash = bcrypt.hashSync(password, salt)
+    // const salt =bcrypt.genSaltSync(10)
+    // const hash = bcrypt.hashSync(password, salt)
 
     const id = crypto.randomBytes(4).toString('HEX'); 
 
